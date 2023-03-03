@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell" customModule="TBV_CLTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="182" height="226"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fVS-2F-sFe">
+                        <rect key="frame" x="5" y="5" width="172" height="172"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fVS-2F-sFe" secondAttribute="height" multiplier="1:1" id="JPU-YT-kNJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBU-2R-pCe">
+                        <rect key="frame" x="10" y="182" width="162" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pBU-2R-pCe" secondAttribute="trailing" constant="10" id="1UK-Fo-0ZL"/>
+                <constraint firstAttribute="bottom" secondItem="pBU-2R-pCe" secondAttribute="bottom" id="NLH-oS-DyL"/>
+                <constraint firstItem="fVS-2F-sFe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Nys-ki-GgH"/>
+                <constraint firstItem="pBU-2R-pCe" firstAttribute="top" secondItem="fVS-2F-sFe" secondAttribute="bottom" constant="5" id="O3L-Lj-EsV"/>
+                <constraint firstItem="pBU-2R-pCe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="eDy-KG-XW8"/>
+                <constraint firstAttribute="trailing" secondItem="fVS-2F-sFe" secondAttribute="trailing" constant="5" id="kVh-Ve-78a"/>
+                <constraint firstItem="fVS-2F-sFe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="qfe-Z8-cpd"/>
+            </constraints>
+            <size key="customSize" width="182" height="226"/>
+            <connections>
+                <outlet property="imvPhoto" destination="fVS-2F-sFe" id="8Fp-9f-mbg"/>
+                <outlet property="lbPhoto" destination="pBU-2R-pCe" id="Z78-kX-NS6"/>
+            </connections>
+            <point key="canvasLocation" x="163.35877862595419" y="49.295774647887328"/>
+        </collectionViewCell>
+    </objects>
+</document>
